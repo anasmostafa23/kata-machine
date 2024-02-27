@@ -8,10 +8,10 @@ export default function bubble_sort(arr: number[]): void {
 
         for (let i = 0 ; i < arr.length-j-1 ; i++) {
 
-            if( arr[i] >= arr[i-1] ) {
+            if( arr[i] >= arr[i+1] ) {
                 temp = arr[i] ;
-                arr[i] = arr[i-1] ; 
-                arr[i-1] = temp ; }
+                arr[i] = arr[i+1] ; 
+                arr[i+1] = temp ; }
         }
 
 
