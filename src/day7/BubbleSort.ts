@@ -3,10 +3,10 @@ export default function bubble_sort(arr: number[]): void {
     let temp = 0;
 
 
-    for (let j = 0 ; j < arr.length-1 ; j++) { 
+    for (let j = 0 ; j < arr.length ; j++) { 
 
 
-        for (let i = 1 ; i < arr.length-j-1 ; i++) {
+        for (let i = 0 ; i < arr.length-j-1 ; i++) {
 
             if( arr[i] >= arr[i-1] ) {
                 temp = arr[i] ;
