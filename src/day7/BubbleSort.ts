@@ -6,7 +6,7 @@ export default function bubble_sort(arr: number[]): void {
     for (let j = 0 ; j < arr.length-1 ; j++) { 
 
 
-        for (let i = 0 ; i < arr.length-j-1 ; i++) {
+        for (let i = 1 ; i < arr.length-j-1 ; i++) {
 
             if( arr[i] >= arr[i-1] ) {
                 temp = arr[i] ;
