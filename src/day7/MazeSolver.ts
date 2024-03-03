@@ -5,7 +5,7 @@ const dir = [
     [0,1]
 ] ; 
 
-function walk (maze : string , wall : string ,curr :Point [] ,end :Point [], seen : boolean[][],path : Point[]):boolean  {
+function walk (maze : string[] , wall : string ,curr :Point  ,end :Point , seen : boolean[][],path : Point[]):boolean  {
 
     if (curr.x < 0 || curr.x >= maze[0].length 
         ||curr.y < 0 || curr.y >= maze[0].length) {
@@ -32,7 +32,7 @@ function walk (maze : string , wall : string ,curr :Point [] ,end :Point [], see
 
     for ( let i = 0 ; i < dir.length ; i++) { 
 
-        const [x,y] = dir[i];curr :Point []
+        const [x,y] = dir[i];
         if (walk(maze , wall , {
             x : curr.x - x  , 
             y : curr.y - y 
