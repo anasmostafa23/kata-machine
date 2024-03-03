@@ -14,7 +14,7 @@ function walk (maze : string[] , wall : string ,curr :Point  ,end :Point , seen 
          
     } 
 
-    if (maze[curr.x][curr.y] == wall) {
+    if (maze[curr.x][curr.y] === wall) {
         return false ; 
     } 
 
