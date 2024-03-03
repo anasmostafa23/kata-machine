@@ -14,7 +14,7 @@ function walk (maze : string[] , wall : string ,curr :Point  ,end :Point , seen 
          
     } 
 
-    if (maze[curr.x][curr.y] === wall) {
+    if (maze[curr.y][curr.x] === wall) {
         return false ; 
     } 
 
@@ -24,10 +24,10 @@ function walk (maze : string[] , wall : string ,curr :Point  ,end :Point , seen 
         return true ; 
     }
 
-    if (seen[curr.x][curr.y]) {
+    if (seen[curr.y][curr.x]) {
         return false ; 
     }
-    seen[curr.x][curr.y] = true ;
+    seen[curr.y][curr.x] = true ;
     path.push(curr) ; 
 
     for ( let i = 0 ; i < dir.length ; i++) { 
